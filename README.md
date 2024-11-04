@@ -7,7 +7,8 @@ def conjuguer(verbe, mode, temps, auxiliaire):
 
         if verbe[-2:]=="er":
             radical=verbe[:-2]
-
+            participe=verbe[:-2]+"é"
+            
             if mode=="indicatif":
 
                 if temps=="présent":
@@ -110,6 +111,31 @@ def conjuguer(verbe, mode, temps, auxiliaire):
 
                 if temps=="futur":
 
+                    if verbe[-4:]=="eler" or verbe[-4:]=="eter":
+                        print("je "+radical+verbe[-3]+"erai")
+                        print("tu "+radical+verbe[-3]+"eras")
+                        print("il/elle/on "+radical+verbe[-3]+"era")
+                        print("nous "+radical+verbe[-3]+"erons")
+                        print("vous "+radical+verbe[-3]+"erez")
+                        print("ils/elles "+radical+verbe[-3]+"eront")
+
+                    elif verbe[-5:]=="voyer":
+                        print
+                        print
+                        print
+                        print
+                        print
+                        print
+
+                    elif verbe[-4:]=="oyer" or verbe[-4:]=="uyer" or verbe[-4:]=="iyer":
+                        print("je "+radical[:-1]+"ierai")
+                        print("tu "+radical[:-1]+"ieras")
+                        print("il/elle/on "+radical[:-1]+"iera")
+                        print("nous "+radical[:-1]+"ierons")
+                        print("vous "+radical[:-1]+"ierez")
+                        print("ils/elles "+radical[:-1]+"ieront")
+
+                    else :
                         print("je "+verbe+"ai")
                         print("tu "+verbe+"as")
                         print("il/elle/on "+verbe+"a")
@@ -131,8 +157,8 @@ def conjuguer(verbe, mode, temps, auxiliaire):
                         print("je "+radical[:-1]+"çais")
                         print("tu "+radical[:-1]+"çais")
                         print("il/elle/on "+radical[:-1]+"çait")
-                        print("nous "+radical[:-1]+"ions")
-                        print("vous "+radical[:-1]+"iez")
+                        print("nous "+radical+"ions")
+                        print("vous "+radical+"iez")
                         print("ils/elles "+radical[:-1]+"çaient")
 
                     else :
@@ -141,5 +167,30 @@ def conjuguer(verbe, mode, temps, auxiliaire):
                         print("il/elle/on "+radical+"ait")
                         print("nous "+radical+"ions")
                         print("vous "+radical+"iez")
-                        print("ils/elles "+radical+"aient")# Projet-1
-Grammaire
+                        print("ils/elles "+radical+"aient")
+
+                if temps=="passé simple":
+                    
+                    if verbe[-3]=="g":
+                        print
+                        print
+                        print
+                        print
+                        print
+                        print
+
+                    if verbe[-3]=="c":
+                        print
+                        print
+                        print
+                        print
+                        print
+                        print
+
+                    else:
+                        print("je "+radical+"ai")
+                        print("tu "+radical+"as")
+                        print("il/elle/on "+radical+"a")
+                        print("nous "+radical+"âmes")
+                        print("vous "+radical+"âtes")
+                        print("ils/elles "+radical+"èrent")
